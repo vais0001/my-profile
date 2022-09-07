@@ -1,6 +1,5 @@
 * {
     font-family: 'Nunito';
-    font-size: 20px;
 }
 
 body {
@@ -20,6 +19,7 @@ body {
     position: absolute;
     left: 20%;
     letter-spacing: 5px;
+    font-size: 18px;
 }
 
 #logo > a {
@@ -29,7 +29,6 @@ body {
 .link {
     text-decoration: none;
     color: black;
-
 }
 
 .nav-links > ul{
@@ -43,6 +42,8 @@ header {
     align-items: center;
     padding: 35px 10%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .nav-links {
@@ -52,33 +53,45 @@ header {
     right: 20%;
 }
 
-li {
+.nav-links > ul > li {
     display: inline-block;
     padding: 0px 10px;
-    font-weight: 600;
 }
 
 .link:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease;
+}
+
+.link:focus {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.link:active {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.link:visited {
+    color: rgba(0, 0, 0, 0.4);
 }
 
 /*Navigation styling end*/
 
 /*Article styling*/
 
-article {
+#home-article {
+    margin-top: 50px;
+    float: left;
+    width: 80%;
+    padding-left: 30px;
+}
+
+#normal-article {
     margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-}
-
-#my-photo {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
 }
 
 .table:after {
@@ -93,3 +106,77 @@ article {
 }
 
 /*Article styling end*/
+
+/*Article content styling*/
+
+.column-2 > h1 {
+    text-align: center;
+}
+
+dd {
+    text-align: justify;
+}
+
+#my-photo {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#hz-logo {
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.blog-article {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    padding: 10px 30px 10px 30px ;
+}
+
+.blog-article:last-of-type {
+    margin-bottom: 50px;
+}
+
+.date {
+    color: gray;
+    font-size: 12px;
+}
+
+.blog-article > h1 {
+    margin-top: 5px;
+}
+
+.blog-content {
+    text-align: justify;
+}
+/*Article content styling end*/
+
+/*Aside menu styling*/
+aside {
+    float: left;
+    width: 17%;
+    border-right: 1px solid black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+#aside-list li:not(:last-child){
+    margin-bottom: 10px;
+}
+/*Aside menu styling end*/
+
+/*Section styling*/
+    #blog-section {
+        margin-top: 50px;
+        text-align: center;
+        color: black;
+        font-size: 17px;
+    }
+/*Section styling end*/
