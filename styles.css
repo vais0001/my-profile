@@ -13,19 +13,6 @@ body {
 
 /* Navigation styling */
 
-#logo {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 20%;
-    letter-spacing: 5px;
-    font-size: 18px;
-}
-
-#logo > a {
-    text-decoration: none;
-}
-
 .link {
     text-decoration: none;
     color: black;
@@ -33,6 +20,8 @@ body {
 
 .nav-links > ul{
     list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
 header {
@@ -40,17 +29,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 10%;
+    padding-top: 35px;
+    padding-bottom: 35px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     font-weight: 600;
 }
 
 .nav-links {
+    width: 100%;
     position: absolute;
     align-items: center;
     cursor: pointer;
-    right: 20%;
 }
 
 .nav-links > ul > li {
@@ -59,20 +49,16 @@ header {
 }
 
 .link:hover {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgb(133, 122, 200);
     transition: all 0.2s ease;
 }
 
 .link:focus {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgb(133, 122, 200);
 }
 
 .link:active {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.link:visited {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgb(133, 122, 200);
 }
 
 /*Navigation styling end*/
@@ -123,6 +109,7 @@ dd {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 5px;
 }
 
 #hz-logo {
