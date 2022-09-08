@@ -1,3 +1,7 @@
+:root {
+    --main-color:rgb(133, 122, 200);
+}
+
 * {
     font-family: 'Nunito';
 }
@@ -8,7 +12,7 @@ body {
 }
 
 .color {
-    color: rgb(133, 122, 200);
+    color: var(--main-color);
 }
 
 /* Navigation styling */
@@ -27,24 +31,6 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-/*
-header {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 70px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.nav-links {
-    width: 100%;
-    position: absolute;
-    align-items: center;
-    cursor: pointer;
-    position: fixed;
-}*/
 
 header {
     height: 100px;
@@ -69,16 +55,16 @@ header {
 }
 
 .link:hover {
-    color: rgb(133, 122, 200);
+    color: var(--main-color);
     transition: all 0.2s ease;
 }
 
 .link:focus {
-    color: rgb(133, 122, 200);
+    color: var(--main-color);
 }
 
 .link:active {
-    color: rgb(133, 122, 200);
+    color: var(--main-color);
 }
 
 /*Navigation styling end*/
