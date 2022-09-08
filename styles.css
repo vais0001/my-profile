@@ -43,7 +43,6 @@ header {
     display: block;
     align-items: center;
     width: 100%;
-    height: max-content;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     font-weight: 600;
@@ -73,8 +72,12 @@ header {
 
 #home-article {
     float: left;
-    width: 80%;
+    width: 60%;
     padding-left: 30px;
+    align-items: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #normal-article {
@@ -169,4 +172,19 @@ aside {
         color: black;
         font-size: 17px;
     }
+
+    /*#footer-section {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        bottom: 0px;
+        left: 0px;
+    }*/
 /*Section styling end*/
+
+/*Footer styling*/
+/*footer {
+    height: 70px;
+}*/
+/*Footer styling end*/
