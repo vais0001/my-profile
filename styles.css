@@ -22,15 +22,17 @@ body {
     list-style: none;
     padding: 0;
     text-align: center;
+    align-items: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
-
+/*
 header {
     background-color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    height: 70px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     font-weight: 600;
@@ -41,6 +43,24 @@ header {
     position: absolute;
     align-items: center;
     cursor: pointer;
+    position: fixed;
+}*/
+
+header {
+    height: 100px;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .nav-links > ul > li {
@@ -66,14 +86,12 @@ header {
 /*Article styling*/
 
 #home-article {
-    margin-top: 50px;
     float: left;
     width: 80%;
     padding-left: 30px;
 }
 
 #normal-article {
-    margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -123,7 +141,8 @@ dd {
 .blog-article {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 1em;
-    padding: 10px 30px 10px 30px ;
+    padding: 10px 30px 10px 30px;
+    margin-top: 50px;
 }
 
 .blog-article:last-of-type {
@@ -151,7 +170,6 @@ aside {
     border-right: 1px solid black;
     font-size: 14px;
     font-weight: 600;
-    margin-top: 50px;
 }
 
 #aside-list li:not(:last-child){
@@ -161,7 +179,6 @@ aside {
 
 /*Section styling*/
     #blog-section {
-        margin-top: 50px;
         text-align: center;
         color: black;
         font-size: 17px;
