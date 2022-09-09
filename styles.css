@@ -71,13 +71,18 @@ header {
 /*Article styling*/
 
 #home-article {
-    float: left;
     width: 60%;
-    padding-left: 30px;
     align-items: center;
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+#profile-article {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 #normal-article {
@@ -85,6 +90,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    margin-top: 50px;
 }
 
 .table:after {
@@ -93,17 +99,19 @@ header {
     clear: both;
 }
 
-.column-2 {
-    float:left;
-    width: 50%;
+.column-3 {
+    margin: 0;
+    float: left;
+    width: 30%;
 }
 
 /*Article styling end*/
 
 /*Article content styling*/
 
-.column-2 > h1 {
+.column-3 > h1 {
     text-align: center;
+    margin: 0;
 }
 
 dd {
@@ -113,9 +121,6 @@ dd {
 #my-photo {
     width: 300px;
     height: 300px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
     border-radius: 5px;
 }
 
@@ -127,14 +132,13 @@ dd {
     margin-left: auto;
 }
 
-.blog-article {
+.shadow-box {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 1em;
     padding: 10px 30px 10px 30px;
-    margin-top: 50px;
 }
 
-.blog-article:last-of-type {
+.shadow-box:last-of-type {
     margin-bottom: 50px;
 }
 
@@ -150,15 +154,32 @@ dd {
 .blog-content {
     text-align: justify;
 }
+
+.question {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.question:last-of-type {
+    margin-bottom: 20px;
+}
+
+.question:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
 /*Article content styling end*/
 
 /*Aside menu styling*/
 aside {
+    padding: 0 !important;
     float: left;
     width: 17%;
-    border-right: 1px solid black;
     font-size: 14px;
     font-weight: 600;
+    border-radius: 0 !important;
+    border-top-right-radius: 1em !important;
+    border-bottom-right-radius: 1em !important;
 }
 
 #aside-list li:not(:last-child){
