@@ -257,6 +257,10 @@ footer {
     padding: 0.5%;
 }
 
+.dashboard-content {
+    padding: 1%;
+}
+
 .no-bottom-border {
     box-shadow: 1px 0px 0px 0px grey !important;
 }
