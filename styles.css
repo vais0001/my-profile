@@ -246,6 +246,10 @@ footer {
     margin-top: 50px;
 }
 
+#dashboard-article:first-of-type {
+    margin-top: 0;
+}
+
 #dashboard-table {
     border-collapse: collapse;
     width: 100%;
