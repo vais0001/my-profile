@@ -80,6 +80,7 @@ header {
     float: left;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 30px 10px 30px;
 }
 
 .home-column {
@@ -93,6 +94,7 @@ header {
     margin-right: auto;
     width: 90%;
     margin-top: 50px;
+    padding: 10px 30px 10px 30px;
 }
 
 #profile-article {
@@ -144,7 +146,6 @@ dd {
 .shadow-box {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 1em;
-    padding: 10px 30px 10px 30px;
 }
 
 .shadow-box:last-of-type {
@@ -212,6 +213,73 @@ footer {
     height: 70px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     background-color: white;
+}
+
+.social-media-link {
     text-align: center;
+    align-items: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+}
+
+.social-media-link img {
+    height: 30px;
+    width: 30px;
+}
+
+.social-media-link a {
+    margin-left: 1%;
+}
+
+.social-media-link a:first-child {
+    margin: 0;
 }
 /*Footer styling end*/
+
+/*Dashboard styling*/
+
+#dashboard-article {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 50px;
+}
+
+#dashboard-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dashboard-table th {
+    border-collapse: collapse;
+    box-shadow: 1px 1px 1px 0px grey;
+    padding: 0.5%;
+}
+
+.no-bottom-border {
+    box-shadow: 1px 0px 0px 0px grey !important;
+}
+
+.no-right-bottom-border {
+    box-shadow: 0px 0px 0px 0px grey !important;
+}
+
+.no-right-border {
+    box-shadow: 0px 1px 0px 0px grey !important;
+}
+
+#nbsa-progress {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40px;
+    accent-color: var(--main-color);
+}
+
+.nbsa-title {
+    margin: 0;
+    text-align: center;
+}
+/*Dashboard styling end*/
