@@ -51,23 +51,15 @@ header {
     font-weight: 600;
 }
 
-a {
+.link {
     margin: 0;
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+.link:hover {
     color: var(--main-color);
     transition: 0.2s ease;
-}
-
-a:active {
-    color: var(--main-color);
-}
-
-a:focus {
-    color: var(--main-color);
 }
 
 /*Navigation styling end*/
@@ -76,6 +68,7 @@ a:focus {
 
 #home-article {
     margin: 0;
+    margin-bottom: 50px;
     width: 60%;
     align-items: center;
     float: left;
@@ -146,6 +139,11 @@ dd {
     width: 300px;
     height: 300px;
     border-radius: 5px;
+}
+
+#certificate {
+    width: 300px;
+    height: 200px;
 }
 
 #hz-logo {
