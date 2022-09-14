@@ -51,13 +51,18 @@ header {
     font-weight: 600;
 }
 
-.link {
+.aside-link {
     margin: 0;
     text-decoration: none;
     color: black;
 }
 
 .home-link:hover, .profile-link:hover, .blog-link:hover, .faq-link:hover, .dashboard-link:hover {
+    color: var(--main-color);
+    transition: 0.2s ease;
+}
+
+.aside-link:hover {
     color: var(--main-color);
     transition: 0.2s ease;
 }
