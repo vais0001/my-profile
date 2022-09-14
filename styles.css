@@ -308,9 +308,26 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 50%;
-    height: 40px;
-    accent-color: var(--main-color);
+    height: 20px;
+    outline: 2px solid black;
+    border-radius: 2em;
+}
+
+#nbsa-limit {
+    width: 80%;
+    height: 100%;
+    border-right: 2px dotted black;
+}
+
+#nbsa-value {
+    border-radius: 2em;
+    height: 100%;
+    width: 50%;
+    background-color: var(--main-color);
+    float: left;
 }
 
 .nbsa-title {
