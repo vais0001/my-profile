@@ -319,6 +319,7 @@ footer {
     height: 20px;
     outline: 2px solid black;
     border-radius: 2em;
+    padding: 5px;
 }
 
 #nbsa-limit {
@@ -330,7 +331,6 @@ footer {
 #nbsa-value {
     border-radius: 2em;
     height: 100%;
-    width: 50%;
     background-color: var(--main-color);
     float: left;
 }
