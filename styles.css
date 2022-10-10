@@ -129,7 +129,7 @@ header {
 .column-3 {
     margin: 0;
     float: left;
-    width: 30%;
+    width: 33.33%;
 }
 
 /*Article styling end*/
@@ -169,7 +169,7 @@ dd {
     height: 100%;
 }
 
-#home-paragraph {
+.home-paragraph {
     text-align: justify;
 }
 
@@ -209,6 +209,31 @@ dd {
     color: var(--main-color);
     cursor: pointer;
 }
+
+.brand-logo {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    transition: all .3s ease-in-out;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
+}
+
+.certificate-paragraph p{
+    margin: 0;
+    float: left; 
+    width: 60%; 
+}
+
+.certificate-paragraph div {
+    float:right;
+}
+
 /*Article content styling end*/
 
 /*Aside menu styling*/
@@ -235,6 +260,11 @@ aside {
         color: black;
         font-size: 17px;
         margin-top: 130px;
+    }
+
+    .read-more {
+        text-decoration: none;
+        color: var(--main-color);
     }
 /*Section styling end*/
 
