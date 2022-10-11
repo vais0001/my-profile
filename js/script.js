@@ -1,6 +1,7 @@
 const grade = document.getElementsByClassName("grade");
 const credits = document.getElementsByClassName("credits");
 const value = document.getElementById("nbsa-value");
+const limit = document.getElementById("nbsa-percentage");
 
 let creditsAmount = 0;
 let percentage = 0;
@@ -69,3 +70,14 @@ if (studyYear[9].grade >= 5.5) {
 
 percentage = (creditsAmount * 100)/60;
 value.style.width = percentage + "%";
+if (creditsAmount !== 0 ) {
+    value.innerText = creditsAmount + " EC";
+}
+
+
+if (creditsAmount >= 45) {
+    value.style.background = "green"
+    limit.style.display = "none";
+} else {
+    value.style.background = "red"
+}
