@@ -369,4 +369,11 @@ footer {
     margin: 0;
     text-align: center;
 }
+
+#nbsa-percentage {
+    float: right;
+    font-weight: bold;
+    color: black;
+    margin-right: -45px;
+}
 /*Dashboard styling end*/
