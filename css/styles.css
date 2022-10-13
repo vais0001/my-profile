@@ -72,6 +72,10 @@ header {
     text-decoration: none;
 }
 
+.blog-post {
+    margin-top: 100px !important;
+}
+
 /*Navigation styling end*/
 
 /*Article styling*/
@@ -131,7 +135,6 @@ header {
     float: left;
     width: 33.33%;
 }
-
 /*Article styling end*/
 
 /*Article content styling*/
@@ -172,7 +175,6 @@ dd {
 .home-paragraph {
     text-align: justify;
 }
-
 
 .shadow-box {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

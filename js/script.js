@@ -28,44 +28,50 @@ studyYear.push({credits: credits[8].innerText, grade: grade[13].innerText});
 
 studyYear.push({credits: credits[9].innerText, grade: grade[14].innerText});
 
+function addCredits (index, studyYear) {
+    let amount = 0;
+    amount += parseFloat(studyYear[index].credits);
+    return amount;
+}
+
 if (studyYear[0].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[0].credits);
+    creditsAmount += addCredits(0, studyYear)
 }
 
 if (studyYear[1].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[1].credits);
+    creditsAmount += addCredits(1, studyYear)
 }
 
 if (studyYear[2].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[2].credits);
+    creditsAmount += addCredits(2, studyYear)
 }
 
 if (studyYear[3].grade1 >= 5.5 && studyYear[3].grade2 >= 5.5) {
-    creditsAmount += parseFloat(studyYear[3].credits);
+    creditsAmount += addCredits(3, studyYear)
 }
 
 if (studyYear[4].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[4].credits);
+    creditsAmount += addCredits(4, studyYear)
 }
 
 if (studyYear[5].grade1 >= 5.5 && studyYear[5].grade2 >= 5.5 && studyYear[5].grade3 >= 5.5) {
-    creditsAmount += parseFloat(studyYear[5].credits);
+    creditsAmount += addCredits(5, studyYear)
 }
 
 if (studyYear[6].grade1 >= 5.5 && studyYear[6].grade2 >= 5.5 && studyYear[6].grade3 >= 5.5) {
-    creditsAmount += parseFloat(studyYear[6].credits);
+    creditsAmount += addCredits(6, studyYear)
 }
 
 if (studyYear[7].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[7].credits);
+    creditsAmount += addCredits(7, studyYear)
 }
 
 if (studyYear[8].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[8].credits);
+    creditsAmount += addCredits(8, studyYear)
 }
 
 if (studyYear[9].grade >= 5.5) {
-    creditsAmount += parseFloat(studyYear[9].credits);
+    creditsAmount += addCredits(9, studyYear)
 }
 
 percentage = (creditsAmount * 100)/60;
@@ -73,7 +79,6 @@ value.style.width = percentage + "%";
 if (creditsAmount !== 0 ) {
     value.innerText = creditsAmount + " EC";
 }
-
 
 if (creditsAmount >= 45) {
     value.style.background = "green"
